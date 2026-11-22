@@ -1,0 +1,43 @@
+{
+  "name": "ghostspec",
+  "version": "1.0.0",
+  "description": "AI-powered spec-driven debugging assistant that hunts down haunted legacy code before it breaks production",
+  "main": "dist/index.js",
+  "bin": {
+    "ghostspec": "./dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/cli/index.ts",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src/**/*.ts",
+    "start": "node dist/cli/index.js"
+  },
+  "keywords": [
+    "kiro",
+    "spec-driven",
+    "debugging",
+    "legacy-code",
+    "ast",
+    "static-analysis",
+    "refactoring"
+  ],
+  "author": "GhostSpec",
+  "license": "MIT",
+  "dependencies": {
+    "@typescript-eslint/parser": "^6.0.0",
+    "chalk": "^4.1.2",
+    "commander": "^11.0.0",
+    "glob": "^10.3.0",
+    "ora": "^5.4.1",
+    "typescript": "^5.2.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.0.0",
+    "jest": "^29.5.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1"
+  }
+}
