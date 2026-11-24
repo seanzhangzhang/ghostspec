@@ -1,0 +1,10 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Echo on file save",
+      "trigger": "PostFileSave",
+      "action": { "type": "command", "command": "echo 'File saved: $FILE_PATH'" }
+    }
+  ]
+}
